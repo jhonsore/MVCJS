@@ -1,0 +1,159 @@
+.clear{clear:both !important; float:none !important; margin:0px !important; padding:0px !important; height:0px !important; width:0px !important}
+.clearfix:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+.clearfix {display: inline-block;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
+
+/*reset button appearance in iphone*/
+button{
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    background:none;
+    border:none;
+}
+
+body{
+    background: #ecf0f1;
+}
+
+#header{
+    height: 60px;
+    background: #c0392b;
+    position: relative;
+}
+
+#bt-call-note{
+    background: #c0392b;
+    padding: 25px;
+    border-radius: 50px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    top: 0;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+}
+
+#overlay-box{
+    background: #ffffff;
+    border-radius: 10px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -87px 0 0 -200px;
+}
+
+#overlay-box__inner{
+    padding: 30px 10px;
+}
+
+#overlay-box__inner strong{
+    font-size: 20px;
+    color: #c0392b;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#overlay-box__inner #box-input{
+    border: 1px solid #cccccc;
+}
+
+#overlay-box__inner #box-input span{
+    display: block;
+    padding: 10px;
+}
+
+#overlay-box__inner #box-input input{
+    width: 100%;
+    border: none;
+    font-size: 14px;
+}
+
+#box-button-add{
+    text-align: right;
+}
+
+#bt-add-note{
+    background: #c0392b;
+    color: #ffffff;
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#bt-add-note:hover{
+    background: #972d22;
+}
+
+#bt-close-overlay{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#box-notes{
+    width: 400px;
+    margin: 60px auto 0 auto;
+}
+
+.note{
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.note.on{
+    text-decoration: line-through;
+    color: #cccccc;
+}
+
+.note:hover .note__control{
+    display: block;
+}
+
+.note__inner{
+    padding: 15px 50px 15px 20px;
+}
+
+.note__control{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: none;
+}
+
+.note__control__button{
+    width: 30px;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.note__control__button svg{
+    margin-top: 15px;
+}
+
+.note__control__button--ok{
+    background: #2ecc71;
+}
+
+.note__control__button--del{
+    background: #e74c3c;
+}
